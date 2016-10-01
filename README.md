@@ -1,2 +1,2 @@
 # ESPupdater
-Upload LUA files to ESP over Wi-Fi and and web server
+Upload LUA files to ESP over Wi-Fi and a web server
