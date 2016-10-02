@@ -41,8 +41,7 @@ I tested a 900 KB JPG file download and it worked just fine.
 
 ## TO DO list
 
-Delete files on ESP8266 side. At this time the update library only uploads new and updates files.
-Provide feedback about the update, using MQTT messages on a dedicated topic, or HTTP posts against the web server.
-Implement a more robust update strategy capable of handling file transfer failures and file corruption that could lead to a dead device,
-no longer able to attempt new updates.
+* Delete files on ESP8266 side. At this time the update library only uploads new and updates files.
+* Provide feedback about the update, using MQTT messages on a dedicated topic, or HTTP posts against the web server.
+* Implement a more robust update strategy capable of handling file transfer failures and file corruption that could lead to a dead device, no longer able to attempt new updates.
 
