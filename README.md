@@ -13,7 +13,7 @@ In addition, since all my devices are running on battery, the update process mus
 
 Many ESP8266 devices are running on batteries and use the deep-sleep feature to wake-up every N minutes. There is little point in checking for 
 updates every single time the device wakes up. This also shortens battery life.  
-For this reason the update check is attempted every N wake-up cycles by using a rtcmem registry that survives a reboot.  
+For this reason the update check is attempted every N wake-up cycles by using a rtcmem registry that survives a deep-sleep.  
 This registry is decreased by 1 every time the device wakes up, when it reaches 0 the update check is fired.  
   
 When new or updated files are found on the web server, the ESP module uploads them on its flash memory and then starts the actual application.
