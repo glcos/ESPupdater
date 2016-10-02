@@ -21,6 +21,8 @@ When new or updated files are found on the web server, the ESP module uploads th
 
 ![Web server path](https://raw.githubusercontent.com/glcos/ESPupdater/master/images/webserver1.png)
 
+![Web server path](https://raw.githubusercontent.com/glcos/ESPupdater/master/images/webserver2.png)
+
 The new/updated content is detected by MD5 checksum comparison on both sides. This method is very fast and requires little bandwidth.
 The web server can run on a very low spec hardware such as a Raspberry PI or even a router running OpenWrt like in my setup.
 Even if the web server could also be on the internet, it is recommended to keep it on the same network as the ESP8266 devices in order to minimise
