@@ -4,19 +4,18 @@ This library enables automatic update of LUA files over Wi-Fi and a web server.
 
 ## Scenario
 
-I had many devices based on ESP8266 spread around my house and I was tired of uninstalling them from their places any time I needed to apply a
-sofware update or just a config change, such as a modification of timing, addresses, etc.
-Some of them are even installed in remote places that would require me to drive for several miles to reach them. That was really unconvenient and time consuming.
-I wanted it to be fully automatic, similar to a smartphone app that gets updated by itself when an update is available.
+I had many devices based on ESP8266 spread around my house and I was tired of uninstalling them from their places any time I needed to apply a sofware update or just a config change, such as a modification of timing, addresses, etc.  
+Some of them are even installed in remote places that would require me to drive for several miles to reach them. That was really unconvenient and time consuming.  
+I wanted it to be fully automatic, similar to a smartphone app that gets updated by itself when an update is available.  
 In addition, since all my devices are running on battery, the update process must have very low impact on battery life.
 
 ## Design specs and principle of operation
 
 Many ESP8266 devices are running on batteries and use the deep-sleep feature to wake-up every N minutes. There is little point in checking for 
-updates every single time the device wakes up. This also shortens battery life.
-For this reason the update check is attempted every N wake-up cycles by using a rtcmem registry that survives a reboot.
-This registry is decreased by 1 every time the device wakes up, when it reaches 0 the update check is fired.
-
+updates every single time the device wakes up. This also shortens battery life.  
+For this reason the update check is attempted every N wake-up cycles by using a rtcmem registry that survives a reboot.  
+This registry is decreased by 1 every time the device wakes up, when it reaches 0 the update check is fired.  
+  
 When new or updated files are found on the web server, the ESP module uploads them on its flash memory and then starts the actual application.
 
 ![Web server path](https://raw.githubusercontent.com/glcos/ESPupdater/master/images/webserver1.png)
