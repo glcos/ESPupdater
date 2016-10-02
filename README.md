@@ -22,8 +22,8 @@ When new or updated files are found on the web server, the ESP module uploads th
 
 ![Web server path](https://raw.githubusercontent.com/glcos/ESPupdater/master/images/webserver2.png)
 
-The new/updated content is detected by MD5 checksum comparison on both sides. This method is very fast and requires little bandwidth.
-The web server can run on a very low spec hardware such as a Raspberry PI or even a router running OpenWrt like in my setup.
+The new/updated content is detected by MD5 checksum comparison on both sides. This method is very fast and requires little bandwidth.  
+The web server can run on a very low spec hardware such as a Raspberry PI or even a router running OpenWrt like in my setup.  
 Even if the web server could also be on the internet, it is recommended to keep it on the same network as the ESP8266 devices in order to minimise
 the time needed to download the updates and thus save the device battery.
 
@@ -32,9 +32,9 @@ the time needed to download the updates and thus save the device battery.
 ![Large file upload](https://raw.githubusercontent.com/glcos/ESPupdater/master/images/largeupload2.png)
 
 The updater library is capable of update any type of file, not just LUA scripts. It syncs any file placed in the web server "appfiles" folder
-to the ESP8266 flash memory including config files, images, sound files, etc.
-It can also overwrite and update itself, if needed.
-Thanks to the great httpDL library writen by Tobias Mädel, it can also download large files.
+to the ESP8266 flash memory including config files, images, sound files, etc.  
+It can also overwrite and update itself, if needed.  
+Thanks to the great httpDL library writen by Tobias Mädel, it can also download large files.  
 I tested a 900 KB JPG file download and it worked just fine.
 
 
