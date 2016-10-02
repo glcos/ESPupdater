@@ -28,6 +28,10 @@ The web server can run on a very low spec hardware such as a Raspberry PI or eve
 Even if the web server could also be on the internet, it is recommended to keep it on the same network as the ESP8266 devices in order to minimise
 the time needed to download the updates and thus save the device battery.
 
+![Large file upload](https://raw.githubusercontent.com/glcos/ESPupdater/master/images/largeupload1.png)
+
+![Large file upload](https://raw.githubusercontent.com/glcos/ESPupdater/master/images/largeupload2.png)
+
 The updater library is capable of update any type of file, not just LUA scripts. It syncs any file placed in the web server "appfiles" folder
 to the ESP8266 flash memory including config files, images, sound files, etc.
 It can also overwrite and update itself, if needed.
