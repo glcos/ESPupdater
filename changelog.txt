@@ -1,0 +1,11 @@
+ESPupdater change log
+---------------------
+
+Ver 1.1 - October 2016
+
+* added support for multiple applications
+* various bug fixes and code optimization
+
+Ver 1.0 - September 2016
+
+* initial version
