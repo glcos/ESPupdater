@@ -1,6 +1,22 @@
 ESPupdater change log
 ---------------------
 
+Ver 1.3 - December 2016
+
+* addedd configuration file
+* improved emergency timer to save battery life
+* when emergency timer expires the application is launched instead of rebooting the module
+* update status of 0 (zero) is now valued and means that something went wrong with update
+* addedd WAIT_FOR_WIFI option: if true the application is launched only when wifi is connected
+* various bug fixes and code optimization
+
+Ver 1.2 - November 2016
+
+* used more efficient way to check when Wi-Fi is ready
+* used dynamic timers
+* implemented global variable with update info to be used in actual aplication
+* various bug fixes and code optimization
+
 Ver 1.1 - October 2016
 
 * added support for multiple applications
