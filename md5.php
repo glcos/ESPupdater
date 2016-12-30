@@ -1,10 +1,10 @@
 <?php
 /**
  * ESP application updater
- * Ver. 1.1
+ * Ver. 1.3
  *
  * Gianluigi Cosari - gianluigi@cosari.it
- * October 2016
+ * December 2016
  *
  *
  */
@@ -26,14 +26,14 @@ if (isset($appName)) {
 }
 
 if (!is_dir($fullpath)) {
-	echo "directory not found";
+	echo "*error* directory not found";
 	exit;
 }
 
 $files = scandir($fullpath, SCANDIR_SORT_ASCENDING);
 
 if (count($files) < 3) {
-	echo "no files found";
+	echo "*error* no files found";
 	exit;	
 }
 
