@@ -11,7 +11,7 @@ function M.download(host, port, url, path, callback)
 	file.open(path, "w+")
 
 	payloadFound = false
-	conn=net.createConnection(net.TCP, false) 
+	conn=net.createConnection(net.TCP, 0) 
 	conn:on("receive", function(conn, payload)
 
 		if (payloadFound == true) then
